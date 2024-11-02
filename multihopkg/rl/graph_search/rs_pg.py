@@ -5,14 +5,18 @@
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  
  Policy gradient with reward shaping.
+Copyright (c) 2018, salesforce.com, inc.
+SPDX-License-Identifier: BSD-3-Clause
+For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+Policy gradient with reward shaping.
 """
 
 from tqdm import tqdm
 
 import torch
 
-from src.emb.fact_network import get_conve_nn_state_dict, get_conve_kg_state_dict, \
-    get_complex_kg_state_dict, get_distmult_kg_state_dict
+from src.emb.fact_network import (
 from src.rl.graph_search.pg import PolicyGradient
 import src.utils.ops as ops
 from src.utils.ops import zeros_var_cuda
